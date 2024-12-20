@@ -90,7 +90,7 @@ class _EditableListState extends State<EditableList> {
         widget.entries,
         widget.isRefreshing ?? ValueNotifier<bool>(false),
       ],
-      builder: (_, _, _) {
+      builder: (_, __, ___) {
         return Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,

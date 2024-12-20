@@ -485,7 +485,7 @@ class _TableRowState<T> extends State<TableRow<T>>
               widget.isExpandable
                   ? ValueListenableBuilder(
                     valueListenable: expandController,
-                    builder: (context, _, _) {
+                    builder: (context, _, __) {
                       return RotationTransition(
                         turns: expandArrowAnimation,
                         child: Icon(

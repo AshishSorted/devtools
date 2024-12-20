@@ -158,7 +158,7 @@ class PubRootDirectorySection extends StatelessWidget {
     return ValueListenableBuilder<IsolateRef?>(
       valueListenable:
           serviceConnection.serviceManager.isolateManager.mainIsolate,
-      builder: (_, _, _) {
+      builder: (_, __, ___) {
         return SizedBox(
           height: 200.0,
           child: EditableList(

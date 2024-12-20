@@ -38,7 +38,7 @@ class InspectorControls extends StatelessWidget {
               .serviceManager
               .serviceExtensionManager
               .hasServiceExtension(extensions.toggleSelectWidgetMode.extension),
-          builder: (_, selectModeSupported, _) {
+          builder: (_, selectModeSupported, __) {
             return ServiceExtensionButtonGroup(
               fillColor: activeButtonColor,
               extensions: [

@@ -82,7 +82,7 @@ class _PathControlPane extends StatelessWidget {
         ValueListenableBuilder<bool>(
           valueListenable: controller.hideStandard,
           builder:
-              (_, hideStandard, _) => DevToolsFilterButton(
+              (_, hideStandard, __) => DevToolsFilterButton(
                 onPressed: () {
                   ga.select(
                     gac.memory,
@@ -99,7 +99,7 @@ class _PathControlPane extends StatelessWidget {
         ValueListenableBuilder<bool>(
           valueListenable: controller.invert,
           builder:
-              (_, invert, _) => DevToolsToggleButton(
+              (_, invert, __) => DevToolsToggleButton(
                 onPressed: () {
                   ga.select(
                     gac.memory,
@@ -127,7 +127,7 @@ class _PathView extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiValueListenableBuilder(
       listenables: [controller.hideStandard, controller.invert],
-      builder: (_, values, _) {
+      builder: (_, values, __) {
         final hideStandard = values.first as bool;
         final invert = values.second as bool;
         return SingleChildScrollView(

@@ -419,7 +419,7 @@ class VisibilityButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ValueListenableBuilder<bool>(
       valueListenable: show,
-      builder: (_, show, _) {
+      builder: (_, show, __) {
         return GaDevToolsButton(
           key: key,
           tooltip: tooltip,

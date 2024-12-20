@@ -227,7 +227,7 @@ class HttpResponseTrailingDropDown extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListenableBuilder(
       listenable: data,
-      builder: (_, _) {
+      builder: (_, __) {
         final visible =
             (data.contentType != null &&
                 !data.contentType!.contains('image')) &&
@@ -244,7 +244,7 @@ class HttpResponseTrailingDropDown extends StatelessWidget {
           replacement: const SizedBox(),
           child: ValueListenableBuilder<NetworkResponseViewType>(
             valueListenable: currentResponseViewType,
-            builder: (_, currentType, _) {
+            builder: (_, currentType, __) {
               return RoundedDropDownButton<NetworkResponseViewType>(
                 value: currentType,
                 items:
@@ -334,7 +334,7 @@ class HttpTextResponseViewer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
       valueListenable: currentResponseNotifier,
-      builder: (_, currentResponseType, _) {
+      builder: (_, currentResponseType, __) {
         NetworkResponseViewType currentLocalResponseType = currentResponseType;
 
         if (currentResponseType == NetworkResponseViewType.auto) {

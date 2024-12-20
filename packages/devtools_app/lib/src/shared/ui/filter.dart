@@ -671,7 +671,7 @@ class _StandaloneFilterFieldState<T> extends State<StandaloneFilterField<T>>
                           ),
                           child: ValueListenableBuilder<Filter>(
                             valueListenable: widget.controller.activeFilter,
-                            builder: (context, _, _) {
+                            builder: (context, _, __) {
                               return DevToolsFilterButton(
                                 message: 'More filters',
                                 onPressed: () {

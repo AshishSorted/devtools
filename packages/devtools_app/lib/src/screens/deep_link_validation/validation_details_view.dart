@@ -470,7 +470,7 @@ class _GenerateAssetLinksPanel extends StatelessWidget {
     final theme = Theme.of(context);
     return ValueListenableBuilder(
       valueListenable: controller.generatedAssetLinksForSelectedLink,
-      builder: (_, GenerateAssetLinksResult? generatedAssetLinks, _) {
+      builder: (_, GenerateAssetLinksResult? generatedAssetLinks, __) {
         return (generatedAssetLinks != null &&
                 generatedAssetLinks.errorCode.isNotEmpty)
             ? Text(

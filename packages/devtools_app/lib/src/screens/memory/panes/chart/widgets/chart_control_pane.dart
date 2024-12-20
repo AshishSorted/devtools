@@ -107,7 +107,7 @@ class _LegendButton extends StatelessWidget {
     return ValueListenableBuilder<bool>(
       valueListenable: chartController.data.isLegendVisible,
       builder:
-          (_, legendVisible, _) => GaDevToolsButton(
+          (_, legendVisible, __) => GaDevToolsButton(
             onPressed: chartController.data.toggleLegendVisibility,
             gaScreen: gac.memory,
             gaSelection:

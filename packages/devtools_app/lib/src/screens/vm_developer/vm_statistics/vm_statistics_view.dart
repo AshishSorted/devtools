@@ -43,7 +43,7 @@ class VMStatisticsViewBody extends StatelessWidget {
         Expanded(
           child: ValueListenableBuilder(
             valueListenable: controller.refreshing,
-            builder: (context, _, _) {
+            builder: (context, _, __) {
               return VMStatisticsWidget(controller: controller);
             },
           ),

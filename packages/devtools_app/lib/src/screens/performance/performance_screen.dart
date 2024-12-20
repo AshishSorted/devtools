@@ -134,7 +134,7 @@ class WebPerformanceScreenBody extends StatelessWidget {
         false;
     return Markdown(
       data: isFlutterWebApp ? flutterWebInstructionsMd : dartWebInstructionsMd,
-      onTapLink: (_, url, _) {
+      onTapLink: (_, url, __) {
         if (url != null) {
           unawaited(launchUrlWithErrorHandling(url));
         }

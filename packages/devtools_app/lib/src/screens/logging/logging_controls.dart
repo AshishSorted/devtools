@@ -39,7 +39,7 @@ class LoggingControls extends StatelessWidget {
           child: ValueListenableBuilder(
             valueListenable: controller.filteredData,
             builder:
-                (context, _, _) => SearchField<LoggingController>(
+                (context, _, __) => SearchField<LoggingController>(
                   searchFieldWidth:
                       isScreenWiderThan(context, _loggingMinVerboseWidth)
                           ? wideSearchFieldWidth

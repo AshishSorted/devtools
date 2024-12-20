@@ -56,7 +56,7 @@ class _DeepLinkPageState extends State<DeepLinkPage>
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
       valueListenable: controller.selectedProject,
-      builder: (_, FlutterProject? project, _) {
+      builder: (_, FlutterProject? project, __) {
         return project == null
             ? const SelectProjectView()
             : const DeepLinkListView();
